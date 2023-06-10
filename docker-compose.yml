@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  web:
+    build:
+      context: .
+    image: angular-frontend:latest
+    container_name: angular-frontend
+    volumes: 
+      - ./workspace:/app
+    ports:
+      - 4200:4200
